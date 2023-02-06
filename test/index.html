@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			
+			
+			// // 最长公共前缀（https://leetcode.cn/problems/longest-common-prefix/）
+			// var longestCommonPrefix = function(strs) {
+			// 	const tempArr = strs.map(item => item.length);
+			// 	const strMinLen = Math.min(...tempArr);
+			// 	if (strs.length > 1) {
+			// 		for (let i = 0; i < strMinLen + 1; i++) {
+			// 			for (let j = 0; j < strs.length; j++) {
+			// 				for (let k = 0; k < strs.length; k++) {
+			// 					if (strs[j].substr(i, 1) !== strs[k].substr(i, 1)) {
+			// 						let resStr = strs[j].substring(0, i);
+			// 						return resStr;
+			// 					} else {
+			// 						if (j === strs.length - 1 && k === strs.length - 1 && i === strMinLen) {
+			// 							console.log(j, k, strMinLen);
+			// 							let resStr = strs[j].substring(0, i);
+			// 							return resStr;
+			// 						}
+			// 					}
+			// 				}
+			// 			}
+			// 		}
+			// 		return '';
+			// 	} else if (strs.length === 1) {
+			// 		return strs[0];
+			// 	} else {
+			// 		return '';
+			// 	}
+			// };
+			// console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+			// console.log(longestCommonPrefix(["dog", "racecar", "car"]));
+			// console.log(longestCommonPrefix(["a"]));
+			// console.log(longestCommonPrefix(["a", "ab"]));
+			// console.log(longestCommonPrefix(["a", "ab", "abc"]));
+			// console.log(longestCommonPrefix(["ab", "abb"]));
+			// console.log(longestCommonPrefix(["a", "b"]));
+			// console.log(longestCommonPrefix(["flower", "flowe1", "flower", "flower"]));
+			// console.log(longestCommonPrefix(["flower", "flower", "flower", "flower"]));
+		</script>
+	</body>
+</html>
