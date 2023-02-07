@@ -1,11 +1,30 @@
-# XXXX年第XX周每日练习汇总 v0.1.0
+# XXXX年第XX周每日练习汇总 v0.2.0
+
+本年度已推进时间进度：█░
+```
+░░░░░░░░░░ - 10
+░░░░░ - 5
+██████████ - 10
+█████ - 5
+PS: 写一个控制打印程序自动输出
+```
+
+## 20xx weekxx_Weekend
+### 本周练习题周末回顾
+1. SQL主要练习了哪些方面，用了哪些思路？  
+2. 算法主要练习了哪些方面，用了哪些思路？  
+### 本周面试题周末回顾
+1. 列举前端面试题  
+2. 列举后端面试题  
+3. 列举大数据面试题  
+4. 全部汇总到年度列表中方便回顾~
 
 
 ## 20xx weekxx_Friday  
 ### SQL练习 
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 
 SQL Schema 
 ```
@@ -16,7 +35,7 @@ SQL Schema
 ### 算法练习  
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 ```
 #### 解答  
 ```
@@ -34,7 +53,7 @@ SQL Schema
 ### SQL练习 
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 
 SQL Schema 
 ```
@@ -45,7 +64,7 @@ SQL Schema
 ### 算法练习  
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 ```
 #### 解答  
 ```
@@ -63,7 +82,7 @@ SQL Schema
 ### SQL练习 
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 
 SQL Schema 
 ```
@@ -74,7 +93,7 @@ SQL Schema
 ### 算法练习  
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 ```
 #### 解答  
 ```
@@ -92,7 +111,7 @@ SQL Schema
 ### SQL练习 
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 
 SQL Schema 
 ```
@@ -103,7 +122,7 @@ SQL Schema
 ### 算法练习  
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 ```
 #### 解答  
 ```
@@ -121,7 +140,7 @@ SQL Schema
 ### SQL练习 
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 
 SQL Schema 
 ```
@@ -132,7 +151,7 @@ SQL Schema
 ### 算法练习  
 #### 题目  
 ```
-来源：LeeCode  ->  xxx  ->  xxx
+来源：xxx  ->  xxx  ->  xxx
 ```
 #### 解答  
 ```
