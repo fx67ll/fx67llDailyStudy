@@ -6,46 +6,24 @@
 	</head>
 	<body>
 		<script type="text/javascript">
+			const numLen1 = nums1.length;
+			const numLen2 = nums2.length;
 			
-			
-			
-			// // 最长公共前缀（https://leetcode.cn/problems/longest-common-prefix/）
-			// var longestCommonPrefix = function(strs) {
-			// 	const tempArr = strs.map(item => item.length);
-			// 	const strMinLen = Math.min(...tempArr);
-			// 	if (strs.length > 1) {
-			// 		for (let i = 0; i < strMinLen + 1; i++) {
-			// 			for (let j = 0; j < strs.length; j++) {
-			// 				for (let k = 0; k < strs.length; k++) {
-			// 					if (strs[j].substr(i, 1) !== strs[k].substr(i, 1)) {
-			// 						let resStr = strs[j].substring(0, i);
-			// 						return resStr;
-			// 					} else {
-			// 						if (j === strs.length - 1 && k === strs.length - 1 && i === strMinLen) {
-			// 							console.log(j, k, strMinLen);
-			// 							let resStr = strs[j].substring(0, i);
-			// 							return resStr;
-			// 						}
-			// 					}
-			// 				}
-			// 			}
-			// 		}
-			// 		return '';
-			// 	} else if (strs.length === 1) {
-			// 		return strs[0];
-			// 	} else {
-			// 		return '';
-			// 	}
-			// };
-			// console.log(longestCommonPrefix(["flower", "flow", "flight"]));
-			// console.log(longestCommonPrefix(["dog", "racecar", "car"]));
-			// console.log(longestCommonPrefix(["a"]));
-			// console.log(longestCommonPrefix(["a", "ab"]));
-			// console.log(longestCommonPrefix(["a", "ab", "abc"]));
-			// console.log(longestCommonPrefix(["ab", "abb"]));
-			// console.log(longestCommonPrefix(["a", "b"]));
-			// console.log(longestCommonPrefix(["flower", "flowe1", "flower", "flower"]));
-			// console.log(longestCommonPrefix(["flower", "flower", "flower", "flower"]));
+			var findMedianSortedArrays = function(nums1, nums2) {
+				const mid = Math.ceil((numLen1 + numLen2 + 1) / 2);
+				const leftNum = getK(nums1, nums2, 0, 0, mid);
+			};
+
+			function getK(nums1, nums2, startIndex1, startIndex2, k) {
+				if(numLen1 == startIndex1 + 1) {
+					return 
+				}
+			}
+
+			console.log(findMedianSortedArrays([1, 2], [3, 4]));
+			console.log(findMedianSortedArrays([0], [0]));
+			console.log(findMedianSortedArrays([13, 13, 13], [13, 13, 13]));
+			console.log(findMedianSortedArrays([1, 22], [3]));
 		</script>
 	</body>
 </html>
