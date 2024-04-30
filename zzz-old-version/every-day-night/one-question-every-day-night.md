@@ -162,6 +162,79 @@ XSS（跨站脚本攻击）和 CSRF（跨站请求伪造）
 > 为什么 `Promise` 比 `setTimeout` 快？  
 > `Promise.all` 和 `Promise.race` 的区别?  
 > **如何自己写一个Promise？**（*曾经面试非常尴尬没有回答出来*）  
+```
+function SimplePromise(executor) {
+  let onResolve, onReject;
+  let fulfilled = false;
+  let rejected = false;
+  let called = false; // 防止resolve和reject被多次调用
+  let value;
+  let reason;
+
+  // resolve函数
+  function resolve(val) {
+    if (!called) {
+      value = val;
+      fulfilled = true;
+      called = true;
+      if (onResolve) {
+        onResolve(val);
+      }
+    }
+  }
+
+  // reject函数
+  function reject(err) {
+    if (!called) {
+      reason = err;
+      rejected = true;
+      called = true;
+      if (onReject) {
+        onReject(err);
+      }
+    }
+  }
+
+  // then方法
+  this.then = function(callback) {
+    onResolve = callback;
+    if (fulfilled) {
+      onResolve(value);
+    }
+    return this; // 支持链式调用
+  };
+
+  // catch方法
+  this.catch = function(callback) {
+    onReject = callback;
+    if (rejected) {
+      onReject(reason);
+    }
+    return this; // 支持链式调用
+  };
+
+  // 立即执行传入的executor函数
+  try {
+    executor(resolve, reject);
+  } catch (error) {
+    reject(error);
+  }
+}
+
+// 使用示例
+let promise = new SimplePromise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Success!");
+    // reject("Error!"); // 也可以测试reject情况
+  }, 1000);
+});
+
+promise.then(result => {
+  console.log(result); // 输出 "Success!"
+}).catch(error => {
+  console.log(error);
+});
+```
 ### 解答思路（*待补充完善*）  
 1. JS 是单线程的，也就是同一个时刻只能做一件事情，那么思考：为什么浏览器可以同时执行异步任务呢？
 	+ 因为浏览器是多线程的，当 JS 需要执行异步任务时，浏览器会另外启动一个线程去执行该任务  
